@@ -1,0 +1,31 @@
+{
+  "name": "cauzify",
+  "version": "1.0.0",
+  "description": "A beautiful mobile-first PWA music player for Navidrome servers",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8080 || python3 -m http.server 8080",
+    "serve": "npx serve -p 8080",
+    "icons": "./generate-icons.sh",
+    "deploy:netlify": "netlify deploy --prod",
+    "deploy:vercel": "vercel --prod"
+  },
+  "keywords": [
+    "music",
+    "player",
+    "pwa",
+    "navidrome",
+    "subsonic",
+    "mobile",
+    "streaming"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/cauzify"
+  },
+  "homepage": "https://github.com/yourusername/cauzify#readme",
+  "devDependencies": {},
+  "dependencies": {}
+}
