@@ -137,6 +137,7 @@ function showApp() {
   document.getElementById('server-name-badge').textContent = new URL(state.server).hostname;
   document.getElementById('settings-server-url').textContent = state.server;
   document.getElementById('settings-username').textContent = state.user;
+  document.getElementById('home-hero-title').textContent = `Welcome back, ${state.user}`;
 }
 
 function openPlayer() {
@@ -210,6 +211,8 @@ async function loadHome() {
 
     document.getElementById('settings-stats').textContent =
       `${recentAlbums.length}+ albums loaded`;
+    document.getElementById('home-stat-albums').textContent = `${recentAlbums.length} albums`;
+    document.getElementById('home-stat-songs').textContent = `${flat.slice(0, 15).length} popular songs`;
   } catch(e) {
     console.error('Load home error:', e);
     document.getElementById('home-loading').innerHTML =
