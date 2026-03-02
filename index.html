@@ -60,6 +60,8 @@
 
 <!-- ─── MAIN APP ───────────────────────────────────── -->
 <div class="screen" id="app-screen">
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
 
   <!-- Top Bar -->
   <div class="topbar">
@@ -97,6 +99,14 @@
         <div class="loading-text">Loading library…</div>
       </div>
       <div id="home-content" style="display:none">
+        <div class="home-hero">
+          <div class="home-hero-sub">Now streaming</div>
+          <div class="home-hero-title" id="home-hero-title">Welcome back</div>
+          <div class="home-hero-meta">
+            <div class="home-pill" id="home-stat-albums">0 albums</div>
+            <div class="home-pill" id="home-stat-songs">0 songs queued</div>
+          </div>
+        </div>
         <div class="section-header">
           <div class="section-title">Recently Added</div>
           <div class="section-more" onclick="app.switchTab('albums')">See all</div>
